@@ -13,8 +13,8 @@ start_urls = [
     "https://discourse.onlinedegree.iitm.ac.in/c/courses/tds-kb/34"
 ]
 
-USERNAME = "24ds1000012@ds.study.iitm.ac.in"
-PASSWORD = "1234567@com"
+USERNAME = "24f2001055@ds.study.iitm.ac.in"
+PASSWORD = "--"
 
 def extract_date_from_text_or_url(text, url):
     """
