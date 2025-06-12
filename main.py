@@ -32,7 +32,7 @@ if not OPENAI_API_KEY:
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Load fallback content
-with open("extracted_contents_filtered_v1.doc", "r", encoding="utf-8") as f:
+with open("extractedData.doc", "r", encoding="utf-8") as f:
     raw_chunks = [chunk.strip() for chunk in f.read().split("\n\n") if chunk.strip()]
 
 # Load or compute embeddings
@@ -225,4 +225,4 @@ Include relevant links from the content if possible.
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run("calling_api_ve:app", host="0.0.0.0", port=8000, reload=DEBUG_MODE)
+    uvicorn.run("getData:app", host="0.0.0.0", port=8000, reload=DEBUG_MODE)
