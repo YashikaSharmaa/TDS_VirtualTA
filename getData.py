@@ -14,7 +14,7 @@ start_urls = [
 ]
 
 USERNAME = "24f2001055@ds.study.iitm.ac.in"
-PASSWORD = "Allahabad@06"
+PASSWORD = "--"
 
 def extract_date_from_text_or_url(text, url):
     """
